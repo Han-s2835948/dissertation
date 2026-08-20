@@ -202,10 +202,16 @@ useful gradient estimator in this implementation.
 
 ## Checkpoints
 
-Trained `.pt` files are not required to inspect the code and are not committed
-to the repository.  They can be recreated with the commands above.  If trained
-weights are distributed, they should be attached to a versioned GitHub Release
-rather than added to the source tree.
+The trained models used in the dissertation are provided with the
+[`v1.0.0` release](https://github.com/Han-s2835948/dissertation/releases/tag/v1.0.0)
+as `mnist_pretrained_models_v1.0.0.zip`.  Extract the archive into the repository
+root to recreate the expected paths under `outputs_formal/mnist/`.
+
+The same release also provides `mnist_reported_results_v1.0.0.zip`, containing
+the numerical summaries and PDF figures reported in the dissertation.  SHA-256
+checksums are included in both archives.  MNIST is still downloaded by
+torchvision on first use, while intermediate trajectories and complete sample
+tensors can be regenerated with the commands above.
 
 ## Reference
 
