@@ -1,0 +1,46 @@
+seed: 42
+data_dir: data
+output_dir: outputs
+device: auto
+
+data:
+  batch_size: 128
+  num_workers: 2
+  dequantize: true
+
+sde:
+  beta_min: 0.1
+  beta_max: 20.0
+  eps: 0.001
+
+model:
+  base_channels: 32
+  time_dim: 64
+
+score_training:
+  epochs: 30
+  lr: 0.0002
+  grad_clip: 1.0
+  ema_decay: 0.999
+  save_every: 1
+
+sampling:
+  steps: 500
+  batch_size: 64
+
+classifier_training:
+  epochs: 5
+  lr: 0.001
+
+trajectory:
+  samples: 50000
+  save_steps: 51
+
+h_training:
+  target_class: 7
+  epochs: 20
+  batch_size: 256
+  lr: 0.0002
+  h_floor: 0.0001
+  guidance_clip: 50.0
+

@@ -1,0 +1,11 @@
+{
+  "pixel_threshold": 0.35,
+  "top_fraction": 0.3,
+  "bottom_fraction": 0.3,
+  "width_ratio_min": 2.0895266524520255,
+  "diagonal_slope_max": 0.2917578481649089,
+  "lower_multirun_fraction_max": 0.1875,
+  "holes_max": 0,
+  "main_component_ratio_min": 0.9551676544613137
+}
+

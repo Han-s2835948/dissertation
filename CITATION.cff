@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the dissertation and the CDG source paper."
+title: "Hard-constraint conditional diffusion on MNIST"
+type: software
+authors:
+  - family-names: Shen
+    given-names: Han
+version: 1.0.0
+date-released: 2026-08-20
+
